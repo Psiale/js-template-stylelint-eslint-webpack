@@ -1,0 +1,46 @@
+{
+  "name": "js-template-stylelint-eslint-webpack",
+  "version": "1.0.0",
+  "description": "vanilla js with webpack, stylelint, eslint and github actions",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dependencies": "npm i --save-dev clean-webpack-plugin html-webpack-plugin style-loader css-loader sass-loader sass file-loader webpack-cli",
+    "apiKey": "npm i --save-dev dotenv-webpack",
+    "start": "webpack-dev-server --open",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psiale/js-template-stylelint-eslint-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psiale/js-template-stylelint-eslint-webpack/issues"
+  },
+  "homepage": "https://github.com/Psiale/js-template-stylelint-eslint-webpack#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.4",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
