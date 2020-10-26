@@ -8,7 +8,8 @@
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dependencies": "npm i --save-dev clean-webpack-plugin html-webpack-plugin style-loader css-loader sass-loader sass file-loader webpack-cli",
+    "dependencies": "npm install --save-dev preload-webpack-plugin@3.0.0-beta.3 clean-webpack-plugin html-webpack-plugin style-loader css-loader sass-loader sass file-loader webpack-cli",
+    "u-dependencies": "npm uninstall --save-dev preload-webpack-plugin@3.0.0-beta.3 clean-webpack-plugin html-webpack-plugin style-loader css-loader sass-loader sass file-loader webpack-cli",
     "apiKey": "npm i --save-dev dotenv-webpack",
     "start": "webpack-dev-server --open",
     "watch": "webpack --watch"
@@ -32,6 +33,7 @@
     "eslint-plugin-import": "^2.20.2",
     "file-loader": "^6.1.1",
     "html-webpack-plugin": "^4.5.0",
+    "preload-webpack-plugin": "^3.0.0-beta.3",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.4",
     "style-loader": "^2.0.0",
