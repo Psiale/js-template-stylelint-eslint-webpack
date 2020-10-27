@@ -4,14 +4,15 @@
   "description": "vanilla js with webpack, stylelint, eslint and github actions",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
     "dependencies": "npm install --save-dev preload-webpack-plugin@3.0.0-beta.3 clean-webpack-plugin html-webpack-plugin style-loader css-loader sass-loader sass file-loader webpack-cli",
     "u-dependencies": "npm uninstall --save-dev preload-webpack-plugin@3.0.0-beta.3 clean-webpack-plugin html-webpack-plugin style-loader css-loader sass-loader sass file-loader webpack-cli",
     "apiKey": "npm i --save-dev dotenv-webpack",
-    "start": "webpack-dev-server --open",
     "watch": "webpack --watch"
   },
   "repository": {
