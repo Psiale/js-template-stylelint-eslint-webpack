@@ -1,9 +1,11 @@
 # js-template-stylelint-eslint-webpack
 vanilla js with webpack, stylelint, eslint and github actions
 
-run npm install
-Run commandlines 
-ESLint: npm install --save-dev eslint@6.8.x eslint-config-airbnb-base@14.1.x eslint-plugin-import@2.20.x babel-eslint@10.1.x
+open a terminal and run:
+npm install 
 
-Stylelint: npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
+if everything worked out you should be able to run:
+
+npm run build 
+npm run watch
 
